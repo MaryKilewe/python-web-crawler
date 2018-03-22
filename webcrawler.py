@@ -6,7 +6,7 @@ def trade_spider(max_pages):
     page_code = 0
     page = 1
     while page <= max_pages:
-        url = 'https://www.ebay.com/sch/Cell-Phones-Smartphones/9355/i.html?_pgn=' + str(page) + '&_skc=' + str(page_code) + '&rt=nc'
+        url = 'httm://websitelink.com' + str(page) + '&_skc=' + str(page_code) + '&rt=nc'
         source_code = requests.get(url)
         plain_text = source_code.text
         soup = BeautifulSoup(plain_text, "html.parser")
